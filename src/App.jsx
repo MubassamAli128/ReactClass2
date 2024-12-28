@@ -1,11 +1,11 @@
 import React from 'react'
 import './index.css';
-import E2 from './components/E2';
+import E3 from './components/E3';
 
 function App() {
   return(
     <>
-    <E2/>
+    <E3/>
     </>
   )
 }
