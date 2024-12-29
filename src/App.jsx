@@ -17,20 +17,29 @@ function App() {
   };
 
   let CheckPoint=()=>{
+    let container=document.getElementById("tab-content");
     if (page === "NewUser"){
-      return <NewUser />;
+      container.innerHTML="";
+      container.innerHTML=<NewUser />
+
+      // return <NewUser />;
     }
     else if (page === "OnlineSales"){
       console.log("Hello2");
-      return <OnlineSales />;
+      container.innerHTML="";
+      container.innerHTML=<OnlineSales />
+      // return <OnlineSales />;
     }
     else if (page === "DailySales"){
-      return <DailySales />;
+      container.innerHTML="";
+      container.innerHTML=<DailySales />
+      // return <DailySales />;
     }
     else{
-      return <NewUser />;  
+      container.innerHTML="";
+      container.innerHTML=<NewUser />
+      // return <NewUser />;  
     }
-  
   }
   
 
@@ -46,8 +55,9 @@ function App() {
           <Tabs onTabClick={switchTab}/>
         </div>
         <div id='tab-content'>
-          {/* {CheckPoint()} */}
-          <CheckPoint/>
+          <NewUser />
+          {/* {let a=CheckPoint()} */}
+          {/* <CheckPoint/> */}
         </div>
         <Footer Btext="Icrease 25%" text=" more email marketing to reach your user acquisition target to reach your monthly target."/>
       </div>
