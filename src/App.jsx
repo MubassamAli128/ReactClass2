@@ -1,19 +1,20 @@
-import React from 'react'
-import { IoAnalyticsSharp } from "react-icons/io5";
-import './index.css';
-import Tabs from './components/Tabs';
-import NewUser from './Pages/NewUser/NewUser';
-import Footer from './components/footer';
-import OnlineSales from './Pages/OnlineSales/OnlineSales'
-import DailySales from './Pages/DailySales/DailySales';
-
+import { } from 'react'
+import p from './assets/p.jpg'
+// import LoginForm from './components/LoginForm'
+// import RegisterForm from './components/registerForm'
+import EmailLogin from './components/emailLogin'
 
 function App() {
-  let page = null;
-
-  return(
+  return (
     <>
-    <div>Hello World!</div>
+      <div className='flex flex-row items-center justify-between w-full h-screen'>
+        <div className='w-[50%] h-full'>
+         <EmailLogin/>
+         {/* <RegisterForm/> */}
+        {/* <LoginForm/> */}
+        </div>
+        <img src={p} alt="" className='w-[50%] h-full'/>
+      </div>
     </>
   )
 }
