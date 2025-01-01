@@ -1,12 +1,11 @@
 import React from 'react';
 
-function Checkbox({ label, checked, onChange }) {
+function Checkbox({id, label }) {
   return (
     <label className="flex items-center gap-2">
       <input
         type="checkbox"
-        checked={checked}
-        onChange={onChange}
+        id={id}
         className="h-4 w-4"
       />
       <span className="text-sm">{label}</span>
