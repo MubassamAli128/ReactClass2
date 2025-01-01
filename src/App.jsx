@@ -87,11 +87,11 @@ function App() {
           {message.text}
         </div>
       )}
-      <div className='flex flex-row items-center justify-between w-full h-full'>
-        <div id='content_div' className='w-[50%] h-full'>
+      <div className='flex flex-row items-center justify-center w-full h-full md:justify-between'>
+        <div id='content_div' className='w-full h-full md:w-[50%]'>
           {checkPoint()}
         </div>
-        <img src={p} alt="" className='w-[50%] h-screen' />
+        <img src={p} alt="" className='hidden w-[50%] h-screen md:block' />
       </div>
     </>
   );
