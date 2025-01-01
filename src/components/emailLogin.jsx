@@ -8,9 +8,12 @@ import HrLine from './hrLine';
 import Input from './inputField';
 // import { GrLanguage } from "react-icons/gr";
 // import { SlSupport } from "react-icons/sl";
-function EmailLogin() {
+function EmailLogin(props) {
+
+
+
     return (
-        <div className='p-24 gap-3 flex flex-col justify-center items-center'>
+        <div className='p-24 gap-3 flex flex-col justify-center h-full items-center'>
             <div className='absolute left-3 top-3'>
                 <FaArrowLeft />
             </div>
@@ -31,10 +34,10 @@ function EmailLogin() {
                 <HrLine />
             </div>
             <div className='w-full'>
-                <Input value="Email Address" type="email" />
+                <Input id="LoginEmail" placeholder="Email Address" type="email" />
             </div>
             <div className='w-full'>
-                <Button value="Continue" bg="bg-black" text="text-white" />
+                <Button id="LoginEmailBtn" Click={props.changes} value="Continue" bg="bg-black" text="text-white" />
             </div>
             <div className='text-center '>
                 <Heading tsize="text-md" Heading="Have a bussiness account?" subHeading="Sign in as a professional" />
